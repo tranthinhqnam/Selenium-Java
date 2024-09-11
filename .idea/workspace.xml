@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="478a8bbb-082f-43c2-9a0c-0b2c183a6fca" name="Changes" comment="Complete DropdownPage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/FileUploadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,11 +53,13 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AlertsTest.executor": "Run",
     "TestNG.AlertsTest.testAcceptAlert.executor": "Run",
     "TestNG.AlertsTest.testGetTextFromAlert.executor": "Run",
     "TestNG.AlertsTest.testInputAlert.executor": "Run",
     "TestNG.DropdownTests.executor": "Run",
     "TestNG.DropdownTests.testSelectOption.executor": "Run",
+    "TestNG.FileUploadTest.testFileUpload.executor": "Run",
     "TestNG.HoverTests.testHoverUser1.executor": "Run",
     "TestNG.KeysTests.testBackspace.executor": "Run",
     "TestNG.KeysTests.testPi.executor": "Run",
@@ -80,7 +81,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertsTest">
+  <component name="RunManager" selected="TestNG.FileUploadTest.testFileUpload">
     <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
@@ -152,17 +153,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeysTests.testPi" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FileUploadTest.testFileUpload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="keys.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="keys" />
-      <option name="MAIN_CLASS_NAME" value="keys.KeysTests" />
-      <option name="METHOD_NAME" value="testPi" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.FileUploadTest" />
+      <option name="METHOD_NAME" value="testFileUpload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FileUploadTest.testFileUpload" />
         <item itemvalue="TestNG.AlertsTest" />
         <item itemvalue="TestNG.AlertsTest.testInputAlert" />
         <item itemvalue="TestNG.AlertsTest.testGetTextFromAlert" />
         <item itemvalue="TestNG.AlertsTest.testAcceptAlert" />
-        <item itemvalue="TestNG.KeysTests.testPi" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +204,7 @@
       <workItem from="1725549792600" duration="5229000" />
       <workItem from="1725595110513" duration="4909000" />
       <workItem from="1726049687924" duration="1863000" />
-      <workItem from="1726065320638" duration="3432000" />
+      <workItem from="1726065320638" duration="4614000" />
     </task>
     <task id="LOCAL-00001" summary="Complete DropdownPage">
       <option name="closed" value="true" />
