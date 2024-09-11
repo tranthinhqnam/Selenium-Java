@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="478a8bbb-082f-43c2-9a0c-0b2c183a6fca" name="Changes" comment="Complete DropdownPage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/WysiwygEditorPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/frames/FrameTests.java" afterDir="false" />
+    <list default="true" id="478a8bbb-082f-43c2-9a0c-0b2c183a6fca" name="Changes" comment="Handle frame">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingExample1Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/InfiniteScrollPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LargeAndDeepDomPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MultipleWindowPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/javascript/JavaScriptTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/wait/WaitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.BaseTests.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -62,9 +73,14 @@
     "TestNG.FileUploadTest.testFileUpload.executor": "Run",
     "TestNG.FrameTests.testWysiwyg.executor": "Run",
     "TestNG.HoverTests.testHoverUser1.executor": "Run",
-    "TestNG.KeysTests.testBackspace.executor": "Run",
+    "TestNG.JavaScriptTests.executor": "Debug",
+    "TestNG.JavaScriptTests.testScrollToTable.executor": "Run",
+    "TestNG.KeysTests.testBackspace.executor": "Debug",
     "TestNG.KeysTests.testPi.executor": "Run",
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
+    "TestNG.NavigationTests.testNavigator.executor": "Debug",
+    "TestNG.NavigationTests.testSwitchTab.executor": "Debug",
+    "TestNG.WaitTest.testWaitUntilHidden.executor": "Run",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,18 +97,21 @@
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pages" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.FrameTests.testWysiwyg">
-    <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LoginTests.testSuccessfulLogin">
+    <configuration name="JavaScriptTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alerts.*" />
+          <option name="PATTERN" value="javascript.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alerts" />
-      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
+      <option name="PACKAGE_NAME" value="javascript" />
+      <option name="MAIN_CLASS_NAME" value="javascript.JavaScriptTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -100,17 +119,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertsTest.testGetTextFromAlert" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="KeysTests.testBackspace" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alerts.*" />
+          <option name="PATTERN" value="keys.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alerts" />
-      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
-      <option name="METHOD_NAME" value="testGetTextFromAlert" />
+      <option name="PACKAGE_NAME" value="keys" />
+      <option name="MAIN_CLASS_NAME" value="keys.KeysTests" />
+      <option name="METHOD_NAME" value="testBackspace" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,17 +137,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertsTest.testInputAlert" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alerts.*" />
+          <option name="PATTERN" value="login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alerts" />
-      <option name="MAIN_CLASS_NAME" value="alerts.AlertsTest" />
-      <option name="METHOD_NAME" value="testInputAlert" />
+      <option name="PACKAGE_NAME" value="login" />
+      <option name="MAIN_CLASS_NAME" value="login.LoginTests" />
+      <option name="METHOD_NAME" value="testSuccessfulLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -136,17 +155,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileUploadTest.testFileUpload" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationTests.testNavigator" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alerts.*" />
+          <option name="PATTERN" value="navigation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alerts" />
-      <option name="MAIN_CLASS_NAME" value="alerts.FileUploadTest" />
-      <option name="METHOD_NAME" value="testFileUpload" />
+      <option name="PACKAGE_NAME" value="navigation" />
+      <option name="MAIN_CLASS_NAME" value="navigation.NavigationTests" />
+      <option name="METHOD_NAME" value="testNavigator" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,17 +173,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FrameTests.testWysiwyg" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationTests.testSwitchTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="frames.*" />
+          <option name="PATTERN" value="navigation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="frames" />
-      <option name="MAIN_CLASS_NAME" value="frames.FrameTests" />
-      <option name="METHOD_NAME" value="testWysiwyg" />
+      <option name="PACKAGE_NAME" value="navigation" />
+      <option name="MAIN_CLASS_NAME" value="navigation.NavigationTests" />
+      <option name="METHOD_NAME" value="testSwitchTab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FrameTests.testWysiwyg" />
-        <item itemvalue="TestNG.FileUploadTest.testFileUpload" />
-        <item itemvalue="TestNG.AlertsTest" />
-        <item itemvalue="TestNG.AlertsTest.testInputAlert" />
-        <item itemvalue="TestNG.AlertsTest.testGetTextFromAlert" />
+        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
+        <item itemvalue="TestNG.KeysTests.testBackspace" />
+        <item itemvalue="TestNG.NavigationTests.testSwitchTab" />
+        <item itemvalue="TestNG.NavigationTests.testNavigator" />
+        <item itemvalue="TestNG.JavaScriptTests" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +224,7 @@
       <workItem from="1725549792600" duration="5229000" />
       <workItem from="1725595110513" duration="4909000" />
       <workItem from="1726049687924" duration="1863000" />
-      <workItem from="1726065320638" duration="6597000" />
+      <workItem from="1726065320638" duration="14877000" />
     </task>
     <task id="LOCAL-00001" summary="Complete DropdownPage">
       <option name="closed" value="true" />
@@ -231,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726065986133</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Handle frame">
+      <option name="closed" value="true" />
+      <created>1726071984367</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726071984367</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +283,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete DropdownPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete DropdownPage" />
+    <MESSAGE value="Handle frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handle frame" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/InfiniteScrollPage.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/base/BaseTests.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
